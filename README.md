@@ -35,4 +35,4 @@ bkmr, dplyr, tidyr, ggplot2, survey, readr
 
 Notes
 	•	Simulation settings can be modified to increase the number of exposures.
-	•	Due to computational demands, BKMR may require substantial runtime, especially under resam
+	•	 Due to computational demands, BKMR may require substantial runtime, especially under resampling, bootstrap replication, or higher-dimensional mixture settings.
