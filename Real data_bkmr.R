@@ -1,5 +1,5 @@
 
-##### REVIEWER-RESPONSIVE NHANES BKMR SCRIPT ###########
+##### NHANES BKMR SCRIPT ###########
 # ======================================================
 # NHANES REAL DATA + BKMR
 # Naive vs design-aware weighted workflow using PSU bootstrap resampling
@@ -1259,7 +1259,7 @@ write.csv(analysis_metadata,
 
 # Appendix-ready code note
 appendix_code_note <- c(
-  "This script implements the reviewer-responsive NHANES BKMR workflow.",
+  "This script implements the NHANES BKMR workflow.",
   "Single-fit BKMR intervals are posterior credible intervals.",
   "Design-aware uncertainty is summarized with bootstrap / replication-based intervals across PSU resamples.",
   "Optional statin adjustment is controlled through statin_var.",
@@ -1271,7 +1271,7 @@ writeLines(appendix_code_note,
 # ---------------------------
 # 16) FINAL REPORT
 # ---------------------------
-cat("\n===== REVIEWER-RESPONSIVE NHANES BKMR ANALYSIS COMPLETE =====\n")
+cat("\n===== NHANES BKMR ANALYSIS COMPLETE =====\n")
 cat("Saved to:\n", outdir_real, "\n\n")
 cat("Key outputs:\n")
 cat("- QC_standardization_range_minus3_plus3.csv\n")
