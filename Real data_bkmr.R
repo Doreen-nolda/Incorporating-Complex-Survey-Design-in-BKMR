@@ -4,7 +4,7 @@
 # NHANES REAL DATA + BKMR
 # Naive vs design-aware weighted workflow using PSU bootstrap resampling
 #
-# Key reviewer-driven corrections implemented:
+# Key implemented:
 #   1) Distinguishes BKMR posterior credible intervals from design-bootstrap intervals
 #   2) Supports optional statin/lipid-lowering medication adjustment
 #   3) Supports optional multiple-imputation workflow (fit each imputed dataset separately)
@@ -39,15 +39,14 @@ suppressPackageStartupMessages({
 # ---------------------------
 # 0) USER SETTINGS
 # ---------------------------
-# EITHER provide one analysis file:
-infile <- "/Users/doreennoldajehu-appiah/Desktop/PAPER_3/PIP3/RealData_Sim/TC.csv"
+infile <- "load.csv"
 
 # OR provide multiple imputed files; leave NULL to use infile above.
 # Example:
 # imputed_files <- list.files("/path/to/imputed/", pattern = "\\.csv$", full.names = TRUE)
 imputed_files <- NULL
 
-outdir_real <- "/Users/doreennoldajehu-appiah/Desktop/PAPER_3/PIP3/RealData_Sim/REVISION"
+outdir_real <- "output directory"
 dir.create(outdir_real, showWarnings = FALSE, recursive = TRUE)
 
 # Outcome and covariates
