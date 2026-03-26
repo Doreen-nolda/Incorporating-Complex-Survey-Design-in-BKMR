@@ -45,10 +45,10 @@ suppressPackageStartupMessages({
 # ---------------------------
 
 # Path to the raw (un-imputed) data file
-infile <- "/Users/doreennoldajehu-appiah/Downloads/Revision/NHANSE_data.csv"
+infile <- "NHANSE_data.csv"
 
 # Output directory
-outdir_real <- "/Users/doreennoldajehu-appiah/Downloads/Revision/REVISION_OUTPUT"
+outdir_real <- "OUTPUT"
 dir.create(outdir_real, showWarnings = FALSE, recursive = TRUE)
 
 # ---- Multiple imputation settings ----
