@@ -482,7 +482,7 @@ perf <- pilot %>%
 
 print(perf)
 
-outdir <- "/Users/doreennoldajehu-appiah/Desktop/PAPER_3/PIP3"
+outdir <- "Output"
 dir.create(outdir, showWarnings = FALSE, recursive = TRUE)
 
 write.csv(perf, file.path(outdir, "performance_summary_p3.csv"), row.names = FALSE)
